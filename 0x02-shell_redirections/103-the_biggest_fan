@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f1 input.log | sort | uniq -c | sort -nr | head -n 11
+cut -f1 input.log | sort | uniq -c | sort -nr | head -n 11 | awk '{printf "%-10s %s\n", $1, $2}'
